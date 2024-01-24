@@ -1,0 +1,27 @@
+.FatherSearch {
+    display: flex;
+    justify-content: center;
+    height: 62px;
+    margin-bottom: 40px;
+}
+.TodoSearch::placeholder {
+    font-family: Cascadia Code Semibold;
+    font-size: medium;
+    color: #79970f62;
+}
+.TodoSearch:focus {
+    outline-color: #83a603a6;
+}
+.TodoSearch {
+    font-family: Cascadia Code Semibold;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(93, 102, 91, 0.986);
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    border-radius: 12px;
+    border: solid 1px white;
+    padding: 0;
+};

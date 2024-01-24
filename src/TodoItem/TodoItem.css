@@ -1,0 +1,56 @@
+.TodoItem {
+    width: 70%;
+    height: 62px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:38px;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background-color: #83a603a6;
+}
+
+.TodoItem-p {
+    margin:24px 0 24px 24px;
+    width:calc(100% - 120px);
+    font-size:18px;
+    line-height:24px;
+    font-weight:400;
+    font-family: Cascadia Code Semibold;
+}
+
+.TodoItem-p--completed {
+    text-decoration:line-through
+}
+
+.Icon {
+cursor:pointer;
+display:flex;
+justify-content:center;
+align-items:center;
+height:48px;
+width:48px;
+font-size:24px;
+font-weight:700
+}
+
+.Icon-check {
+    position:absolute;
+    top: 6px;
+    left:12px
+}
+
+.Icon-check--active {
+    color:#74bbdb
+}
+
+.Icon-delete {
+    position:absolute;
+    top:6px;
+    right:0
+}
+
+.Icon-delete:hover {
+    color:red
+};

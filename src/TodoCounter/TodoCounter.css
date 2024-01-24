@@ -1,0 +1,12 @@
+.TodoCounter span {
+    color: #95bd06fa;
+}
+
+.TodoCounter {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 18px 48px 48px 48px ;
+    font-family: Cascadia Code Semibold;
+    color: rgba(255, 255, 255, 0.808);
+};
