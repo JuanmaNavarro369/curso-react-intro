@@ -1,13 +1,14 @@
 import './TodoCounter.css'
 
-function TodoCounter (props) {
+function TodoCounter ({completed, total}) {
     return (
       <h1 className='TodoCounter'>
-
-        Has completado <span>{props.completed} </span> 
-        de <span>{props.total} </span> TODOs
-
-      </h1>
+      {total === 0
+        ? 'No tienes ningun TODO'
+        : completed === total
+        ? 'Has completado todos tus TODOS'
+        : `Has completado ${completed} de ${total} TODOS`}
+    </h1>
     );
   };
 
