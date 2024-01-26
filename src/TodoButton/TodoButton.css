@@ -8,10 +8,10 @@
     height: 60px;
     border: transparent;
     border-radius: 120px;
-    position: sticky;
-    left: 532px;
-    bottom: 9px;
     cursor: pointer;
     color: #83a603a6;
     box-shadow: 1px 1.5px 1px 1px #83a603a6;
+    position: absolute;
+    right: 15px;
+    top: -105px;
 };

@@ -1,6 +1,6 @@
 .TodoItem {
-    width: 70%;
-    height: 62px;
+    width: 75%;
+    height: 75px;
     position:relative;
     display:flex;
     justify-content:center;
@@ -14,10 +14,10 @@
 .TodoItem-p {
     margin:24px 0 24px 24px;
     width:calc(100% - 120px);
-    font-size:18px;
     line-height:24px;
-    font-weight:400;
-    font-family: Cascadia Code Semibold;
+    font-size:18px;
+    font-weight:bold;
+    font-family: Cascadia Code;
 }
 
 .TodoItem-p--completed {
@@ -37,7 +37,7 @@ font-weight:700
 
 .Icon-check {
     position:absolute;
-    top: 6px;
+    top: 9px;
     left:12px
 }
 
@@ -47,7 +47,7 @@ font-weight:700
 
 .Icon-delete {
     position:absolute;
-    top:6px;
+    top:12px;
     right:0
 }
 

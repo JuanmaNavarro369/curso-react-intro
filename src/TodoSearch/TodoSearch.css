@@ -1,12 +1,12 @@
 .FatherSearch {
     display: flex;
     justify-content: center;
-    height: 62px;
-    margin-bottom: 40px;
+    height: 75px;
+    margin-bottom: 38px;
 }
 .TodoSearch::placeholder {
     font-family: Cascadia Code Semibold;
-    font-size: medium;
+    font-size: large;
     color: #79970f62;
 }
 .TodoSearch:focus {
@@ -16,7 +16,7 @@
     font-family: Cascadia Code Semibold;
     font-size: large;
     color: rgb(255, 255, 255);
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
     background-color: rgba(93, 102, 91, 0.986);
     height: 100%;
     width: 70%;

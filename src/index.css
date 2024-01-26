@@ -32,6 +32,8 @@ body {
   width: 600px;
   height: 80%;
 }
+
+/* Hide scrollbar */
 #root::-webkit-scrollbar {
   width: 0;
 }

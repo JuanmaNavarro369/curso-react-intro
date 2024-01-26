@@ -1,10 +1,11 @@
+import React from 'react';
 import { TodoCounter } from './TodoCounter/TodoCounter.js';
 import { TodoSearch } from './TodoSearch/TodoSearch.js';
 import { TodoList } from './TodoList/TodoList.js';
 import { TodoItem } from './TodoItem/TodoItem.js';
 import { TodoButton } from './TodoButton/TodoButton.js'
 
-const allTodos = [
+const arrayTodos = [
   {text: "Comer Kebab1", completed: true},
   {text: "Comer Kebab2", completed: true},
   {text: "Comer Kebab3", completed: true},
@@ -23,26 +24,73 @@ const allTodos = [
   {text: "Comer Kebab16", completed: false},
   {text: "Comer Kebab17", completed: false},
   {text: "Comer Kebab18", completed: false},
+  {text: "Comer Kebab19", completed: true}
 ];
 
 function App() {
-  return (
-    <>
 
-    <TodoCounter completed={0} total={18} />
-    <TodoSearch />
+  // Estados
+  const [todos, setTodos] = React.useState(arrayTodos);
+
+  const [searchValue, setSearchValue] = React.useState("");
+
+  console.log(searchValue);
+
+  
+  // Estados Derivados
+  const completedTodos = todos.filter(todo => !!todo.completed).length;
+  
+  const allTodos = todos.length;
+  
+  const searchedTodos = todos.filter(
+    (todo) => {
+      return todo.text.toLowerCase().includes(searchValue.toLowerCase())
+      }
+    );
+
+    const completeTodo = (i) => {
+      const newArray = todos.map((todo, j) => {
+         if(i === j) {
+          return {...todo, completed: !todo.completed}
+        }
+        return todo
+      })
+      setTodos(newArray)
+    };
+    
+  const deleteTodo = (i /* <== i es el todo al que has clickado */) => {
+    const newArray = todos.filter((_, j) => {
+      return i !== j;
+      /* filter establece el segundo parámetro como el índice (j)
+        la barra baja indica que el primer parámetro no va a ser utilizado*/
+    });
+    setTodos(newArray)
+  };
+
+
+
+    return (
+      <>
+
+    <TodoCounter completed={completedTodos} total={allTodos} />
+
+    <TodoSearch
+    searchValue={searchValue}
+    setSearchValue={setSearchValue}
+    />
 
     <TodoList>
-      {allTodos.map(todo => (
+      {searchedTodos.map((todo, index) => (
         <TodoItem
         key={todo.text}
         text={todo.text}
         completed={todo.completed}
+        onComplete={() => completeTodo(index)}
+        onDelete={() => deleteTodo(index)}
         />
-      ))}
-    </TodoList>
-
+        ))}
     <TodoButton />
+    </TodoList>
 
     </>
   );
