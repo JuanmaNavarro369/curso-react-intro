@@ -6,15 +6,15 @@ import { TodoItem } from './TodoItem/TodoItem.js';
 import { TodoButton } from './TodoButton/TodoButton.js'
 
 const arrayTodos = [
-  {text: "Comer Kebab1", completed: false},
-  {text: "Comer Kebab2", completed: true},
-  {text: "Comer Kebab3", completed: true},
-  {text: "Comer Kebab4", completed: true},
-  {text: "Comer Kebab5", completed: true},
-  {text: "Comer Kebab6", completed: true},
-  {text: "Comer Kebab7", completed: true},
-  {text: "Comer Kebab8", completed: true},
-  {text: "Comer Kebab9", completed: true}
+  {text: "Comer Kebab 1", completed: false},
+  {text: "Comer Kebab 2", completed: true},
+  {text: "Comer Kebab 3", completed: true},
+  {text: "Comer Kebab 4", completed: true},
+  {text: "Comer Kebab 5", completed: true},
+  {text: "Comer Kebab 6", completed: true},
+  {text: "Comer Kebab 7", completed: true},
+  {text: "Comer Kebab 8", completed: true},
+  {text: "Comer Kebab 9", completed: true}
 ];
 
 function App() {
