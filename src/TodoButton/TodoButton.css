@@ -14,4 +14,11 @@
     position: absolute;
     right: 15px;
     top: -105px;
-};
+    transform: rotate(0);
+    transition: .3s ease;
+    }
+
+.CreateTodoButton:hover {
+    transform: rotate(360deg);
+    box-shadow: 1px 1px 1px 1px #83a603a6;
+    }

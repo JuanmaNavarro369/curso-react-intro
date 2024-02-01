@@ -9,6 +9,7 @@
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     background-color: #83a603a6;
+    color: rgba(255, 255, 255, 0.808);
 }
 
 .TodoItem-p {
@@ -21,5 +22,5 @@
 }
 
 .TodoItem-p--completed {
-    text-decoration:line-through
-};
+    text-decoration:line-through black;
+}
