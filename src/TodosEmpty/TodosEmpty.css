@@ -1,0 +1,9 @@
+.empty {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-family: Cascadia Code;
+    font-size: 20px;
+    color: white;
+    gap: 12px;
+}

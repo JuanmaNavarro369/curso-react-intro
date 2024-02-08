@@ -1,9 +1,12 @@
 import './TodoCounter.css'
 
-function TodoCounter ({completed, total}) {
+function TodoCounter ({completed, total, loading}) {
     return (
       <h1 className='TodoCounter'>
-        
+        {loading ? (
+          <span>Espera <span className='green'>un</span> momento<span className='green'>...</span></span>
+        ) : (
+          <>
       {total === 0
         ? (<span>No tienes ningún <span className='green'>TODO</span></span>)
         : completed === total
@@ -14,9 +17,9 @@ function TodoCounter ({completed, total}) {
             Has completado <span className='green'> {completed} </span>
             de <span className='green'> {total} </span> TODOs
           </span>
-          )
-
-        }
+          )}
+        </>
+        )}
     </h1>
     );
   };

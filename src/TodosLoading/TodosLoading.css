@@ -1,0 +1,16 @@
+.divLoading {
+    display: flex;
+    position: absolute;
+    top: 156px;
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    font-family: Cascadia Code;
+    font-size: 20px;
+    color: white;
+}

@@ -5,15 +5,16 @@
     margin-bottom: 38px;
 }
 .TodoSearch::placeholder {
-    font-family: Cascadia Code Semibold;
+    font-family: Cascadia Code;
     font-size: large;
     color: #79970f62;
 }
 .TodoSearch:focus {
-    outline-color: #83a603a6;
+    outline-color: rgb(66, 184, 42);
 }
 .TodoSearch {
-    font-family: Cascadia Code Semibold;
+    font-family: Cascadia Code;
+    font-style: italic;
     font-size: large;
     color: rgb(255, 255, 255);
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);

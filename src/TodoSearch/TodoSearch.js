@@ -1,22 +1,32 @@
 import React from 'react';
 import './TodoSearch.css'
 
-function TodoSearch ({searchValue, setSearchValue}) {
+function TodoSearch ({searchValue, setSearchValue, loading}) {
 
+return (
 
-    return (
-      <div className='FatherSearch'>
+  <div className='FatherSearch'>
 
+  {loading ? (
+      <input
+      className='TodoSearch'
+      value = {searchValue}
+      onChange={(event) => {
+        setSearchValue(event.target.value);
+      }}/>
+
+  ) : (
+    <>
       <input placeholder="Comer Kebabs"
-        className='TodoSearch'
-        value = {searchValue}
-        onChange={(event) => {
-          setSearchValue(event.target.value);
-        }}
-      />
+      className='TodoSearch'
+      value = {searchValue}
+      onChange={(event) => {
+        setSearchValue(event.target.value);
+      }}/>
+    </>
+  )}
 
-      </div>
-      )
-  };
+  </div>
+)};
 
-  export {TodoSearch};
+export {TodoSearch};

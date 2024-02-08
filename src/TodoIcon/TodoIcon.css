@@ -27,5 +27,5 @@
 }
 
 .Icon-container-delete:hover .Icon-svg{
-    fill: red;
+    fill: rgb(66, 184, 42);
 }

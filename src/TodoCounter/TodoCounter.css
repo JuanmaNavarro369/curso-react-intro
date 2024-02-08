@@ -1,12 +1,13 @@
 .green {
-    color: #95bd06fa;
+    color: rgb(66, 184, 42);
 }
 
 .TodoCounter {
+    font-family: Cascadia Code;
+    font-style: italic;
     font-size: 30px;
     text-align: center;
     margin: 0;
     padding: 18px 48px 48px 48px ;
-    font-family: Cascadia Code Semibold;
     color: rgba(255, 255, 255, 0.808);
 };

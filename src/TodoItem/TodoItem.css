@@ -16,11 +16,18 @@
     margin:24px 0 24px 24px;
     width:calc(100% - 120px);
     line-height:24px;
-    font-size:18px;
     font-weight:bold;
+    font-size:18px;
     font-family: Cascadia Code;
+    letter-spacing: 0.5px;
 }
 
 .TodoItem-p--completed {
     text-decoration:line-through black;
+}
+
+@media (max-width: 640px) {
+    .TodoItem {
+        margin-bottom: 24px;
+    }
 }
