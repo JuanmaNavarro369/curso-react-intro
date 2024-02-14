@@ -1,0 +1,105 @@
+.modalBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000af;
+}
+
+.modalContainer {
+    color: rgba(255, 255, 255, 0.808);
+    font-family: Cascadia Code;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 12px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+    width: 550px;
+    height: 260px;
+    gap: 32px;
+}
+
+.modalTitle {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 12px;
+}
+
+textarea {
+    display: flex;
+    text-align: center;
+    width: 85%;
+    height: 62px;
+    font-family: Cascadia Code;
+    font-style: italic;
+    font-size: large;
+    background-color: rgba(93, 102, 91, 0.986);
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+textarea::placeholder {
+    color: #79970f62;
+    line-height: 62px;
+}
+
+textarea:focus {
+    outline-color: rgb(66, 184, 42);
+}
+
+textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 46px;
+    margin: 12px;
+}
+.modalButton-cancel {
+    font-family: Cascadia Code;
+    width: 30%;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #83a603;
+    border-radius: 9px;
+    background-color: transparent;
+    color: rgb(66, 184, 42);
+    font-weight:bold;
+    font-size:18px;
+}
+
+.modalButton-add {
+    font-family: Cascadia Code;
+    width: 30%;
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    border-radius: 9px;
+    background-color: #83a603;
+    color: rgba(255, 255, 255, 0.808);
+    font-weight:bold;
+    font-size:18px;
+}
+.modalButton-cancel:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.modalButton-add:hover {
+    cursor: pointer;
+    color: rgb(97, 219, 73);
+}
+
+@media (max-width: 640px) {
+    .modalContainer {
+        width: 90%;
+    }
+}

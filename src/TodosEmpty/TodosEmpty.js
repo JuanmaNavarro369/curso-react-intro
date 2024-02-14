@@ -6,7 +6,7 @@ function TodosEmpty () {
         <span className='empty'>
             <p className='green'>Crea</p>
             tu primer
-            <p className='green'>TODO</p> 
+            <p className='green'>TODO</p>
         </span>
     )
 };

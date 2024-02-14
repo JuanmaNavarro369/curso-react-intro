@@ -1,4 +1,5 @@
 .CreateTodoButton {
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +23,10 @@
     transform: rotate(360deg);
     color: rgb(66, 184, 42);
     box-shadow: 1px 1px 1px 1px rgb(66, 184, 42);
+}
+
+@media (max-width: 640px) {
+    .CreateTodoButton {
+        z-index: 0;
+    }
 }

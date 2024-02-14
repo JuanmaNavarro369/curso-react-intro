@@ -14,3 +14,10 @@
     font-size: 20px;
     color: white;
 }
+
+@media (max-width: 640px) {
+    .divLoading {
+        position: absolute;
+        top: 0;
+    }
+}

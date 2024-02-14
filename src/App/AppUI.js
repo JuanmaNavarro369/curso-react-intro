@@ -8,59 +8,57 @@ import { TodosLoading } from '../TodosLoading/TodosLoading'
 import { TodosError } from '../TodosError/TodosError'
 import { TodosEmpty } from '../TodosEmpty/TodosEmpty'
 import { TodosNotFound } from '../TodosNotFound/TodosNotFound'
+import { Modal } from '../Modal/modal';
+import { TodoContext } from '../TodoContext'
+import { TodoForm } from '../TodoForm/TodoForm'
 
-function AppUI({
-    todos,
-    completedTodos,
-    allTodos,
-    searchValue,
-    setSearchValue,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-    loading,
-    error,
-}){
+function AppUI(){
 
-return (
-<>
-    <TodoCounter
-        completed={completedTodos}
-        total={allTodos}
-        loading={loading}
-        />
+    const {
+        todos,
+        loading,
+        error,
+        searchedTodos,
+        completeTodo,
+        deleteTodo,
+        openModal,
+    } = React.useContext(TodoContext);
+    return (
+        <>
+        <TodoCounter/>
 
-    <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-        loading={loading}
-    />
+        <TodoSearch/>
 
-    <TodoList>
+        <TodoList>
 
-        {loading && < TodosLoading />}
-
-        {error && < TodosError />}
-
-        {(!loading && searchedTodos.length === 0 && todos.length > 0) && < TodosNotFound />}
-
-        {(!loading && todos.length === 0) && < TodosEmpty />}
-
-        {searchedTodos.map((todo) => (
-            <TodoItem
-            key={todo.text}
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.id)} // completeTodo(todo.text)
-            onDelete={() => deleteTodo(todo.id)}     // deleteTodo(todo.text)
-            />
+            {loading && < TodosLoading />}
+            
+            {error && < TodosError />}
+            
+            {(!loading && searchedTodos.length === 0 && todos.length > 0) && < TodosNotFound />}
+            
+            {(!loading && todos.length === 0) && < TodosEmpty />}
+            
+            {searchedTodos.map((todo) => (
+                <TodoItem
+                    key={todo.id}
+                    text={todo.text}
+                    completed={todo.completed}
+                    onComplete={() => completeTodo(todo.id)}
+                    onDelete={() => deleteTodo(todo.id)}
+                />
             ))}
+            
+            {!loading && <TodoButton />}
 
-            <TodoButton />
+            {openModal && (
+                <Modal>
+                    <TodoForm />
+                </Modal>
+            )}
 
-    </TodoList>
-</>
-)
-};
+        </TodoList>
+    </>
+)};
 
 export { AppUI };

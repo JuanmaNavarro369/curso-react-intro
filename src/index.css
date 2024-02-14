@@ -34,11 +34,6 @@ body {
   width: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 @media (max-width: 640px) {
   #root {
     background-color: transparent;

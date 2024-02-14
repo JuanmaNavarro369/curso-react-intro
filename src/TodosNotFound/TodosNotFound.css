@@ -8,3 +8,10 @@
     color: white;
     gap: 12px;
 }
+
+@media (max-width: 640px) {
+    .notFound {
+        position: absolute;
+        top: 0;
+    }
+}

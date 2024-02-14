@@ -1,19 +1,15 @@
 import React from "react";
 
-const arrayTodos = [
-    {text: "Comer Kebab 1", completed: false, id: 1},
-    {text: "Comer Kebab 2", completed: true, id: 2},
-    {text: "Comer Kebab 3", completed: true, id: 3},
-    {text: "Comer Kebab 4", completed: true, id: 4},
-    {text: "Comer Kebab 5", completed: true, id: 5},             
-    {text: "Comer Kebab 6", completed: true, id: 6},             
-    {text: "Comer Kebab 7", completed: true, id: 7},             
-    {text: "Comer Kebab 8", completed: true, id: 8},             
-    {text: "Comer Kebab 9", completed: true, id: 9},             
-];
+// const arrayTodos = [
+//     {text: "Comer Kebab 1", completed: false},
+//     {text: "Comer Kebab 2", completed: true},
+//     {text: "Comer Kebab 3", completed: true},
+//     {text: "Comer Kebab 4", completed: true},
+//     {text: "Comer Kebab 5", completed: true},             
+//     {text: "Comer Kebab 6", completed: true},             
+// ];
 
-// localStorage.setItem("TODOS_V1", JSON.stringify(arrayTodos));
-
+// Custom Hook
 function useLocalStorage() {
     
     // Estados
@@ -24,7 +20,7 @@ function useLocalStorage() {
     const saveTodos = (newArray) => {
         localStorage.setItem("TODOS_V1", JSON.stringify(newArray));
         setTodos(newArray);
-        // Vinculado con completeTodo y deleteTodo en App.js
+        // Vinculado con completeTodo y deleteTodo en TodoContext.js
     };
     
     React.useEffect(() => {
@@ -33,7 +29,7 @@ function useLocalStorage() {
             try{
                 const parsedTodos = JSON.parse(localStorage.getItem("TODOS_V1"))
                 if(!parsedTodos) {
-                    setTodos(arrayTodos)
+                    setTodos([])
                 } else {
                     setTodos(parsedTodos)
                 } setLoading(false)
