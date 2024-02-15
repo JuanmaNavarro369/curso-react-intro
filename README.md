@@ -1,10 +1,11 @@
-# Repositorio de TODO Machine hecha en React.js
+# TODO Machine hecha en React.js
 
 ¡Hola!
 
-En este repositorio encontrarás una TODO Machine hecha con todos los fundamentos de React que he aprendido en la escuela de JavaScript de PLATZI con estilos simples pero propios!
+En este repositorio encontrarás una TODO Machine hecha con todos los fundamentos de React que he aprendido en la escuela de JavaScript de PLATZI.
+Tiene algunos estilos responsivos, simples pero propios!
 
-Aquí tienes el enlace, espero que te guste: <3 https://juanmanavarro369.github.io/curso-react-intro/ <3
+Aquí tienes el enlace, espero que te guste: https://juanmanavarro369.github.io/curso-react-intro/
 
 ## Learn More
 
