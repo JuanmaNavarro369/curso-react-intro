@@ -25,7 +25,7 @@
     box-shadow: 1px 1px 1px 1px rgb(66, 184, 42);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 293px) {
     .CreateTodoButton {
         z-index: 0;
     }
