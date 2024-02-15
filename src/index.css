@@ -21,6 +21,8 @@ body {
 #root {
   position: relative;
   background-color: #88847f60;
+  font-family: Source Code Pro;
+  font-weight: 600;
   border-radius: 12px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
   overflow-y: auto;

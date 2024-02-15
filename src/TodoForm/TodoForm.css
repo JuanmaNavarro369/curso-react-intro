@@ -12,7 +12,8 @@
 
 .modalContainer {
     color: rgba(255, 255, 255, 0.808);
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,8 @@ textarea {
     text-align: center;
     width: 85%;
     height: 62px;
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     font-style: italic;
     font-size: large;
     background-color: rgba(93, 102, 91, 0.986);
@@ -66,7 +68,8 @@ textarea::-webkit-scrollbar {
     margin: 12px;
 }
 .modalButton-cancel {
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     width: 30%;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
     border: 1px solid #83a603;
@@ -78,7 +81,8 @@ textarea::-webkit-scrollbar {
 }
 
 .modalButton-add {
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     width: 30%;
     box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.3);
     border: 1px solid white;

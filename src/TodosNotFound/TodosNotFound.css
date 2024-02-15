@@ -3,7 +3,8 @@
     top: 156px;
     display: flex;
     align-items: center;
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     font-size: 20px;
     color: white;
     gap: 12px;

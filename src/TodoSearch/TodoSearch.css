@@ -5,7 +5,8 @@
     margin-bottom: 38px;
 }
 .TodoSearch::placeholder {
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     font-size: large;
     color: #79970f62;
 }
@@ -13,7 +14,8 @@
     outline-color: rgb(66, 184, 42);
 }
 .TodoSearch {
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: 600;
     font-style: italic;
     font-size: large;
     color: rgb(255, 255, 255);

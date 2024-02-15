@@ -3,7 +3,8 @@
 }
 
 .TodoCounter {
-    font-family: Cascadia Code;
+    font-family: Source Code Pro;
+    font-weight: bold;
     font-style: italic;
     font-size: 30px;
     text-align: center;
