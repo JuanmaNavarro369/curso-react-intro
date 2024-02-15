@@ -6,7 +6,7 @@ function TodosLoading () {
     return (
         <div className='divLoading'>
 
-            <span className='loading'> Cargando </span>
+            <span className='loading'>Cargando&nbsp;</span>
             <ClipLoader className='clipLoader' color="rgb(34, 160, 9)"/>
 
         </div>
