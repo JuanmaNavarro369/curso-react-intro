@@ -5,7 +5,7 @@ function TodosEmpty () {
     return (
         <span className='empty'>
             <p className='green'>Crea</p>
-            tu primer
+            &nbsp;tu&nbsp;primer&nbsp;
             <p className='green'>TODO</p>
         </span>
     )

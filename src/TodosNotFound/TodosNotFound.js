@@ -4,9 +4,9 @@ import './TodosNotFound.css'
 function TodosNotFound () {
     return (
         <span className='notFound'>
-            No se
+            No&nbsp;se&nbsp;
             <p className='green'>encuentra</p>
-            ningún
+            &nbsp;ningún&nbsp;
             <p className='green'>TODO</p> 
         </span>
     )

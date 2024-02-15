@@ -4,9 +4,9 @@ import './TodosError.css'
 function TodosError () {
     return (
         <span className='error'>
-            Lo sentimos, ha
+            Lo&nbsp;sentimos,&nbsp;ha&nbsp;
             <p className='green'>ocurrido</p>
-            un
+            &nbsp;un&nbsp;
             <p className='green'>ERROR</p>
         </span>
     )
