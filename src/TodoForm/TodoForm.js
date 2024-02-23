@@ -25,6 +25,9 @@ function TodoForm() {
         addTodo(newTodoValue)
     }
 
+    const isDisabled = newTodoValue.trim() === '';
+    // isDisabled se leería de la siguiente forma: ¿Es el resultado de eliminar los espacios en blanco al principio y al final de newTodoValue igual a una cadena vacía? Si la respuesta es sí, significa que newTodoValue está vacío o solo contiene espacios en blanco, por tanto isDisabled es true. De lo contrario, si la respuesta es no, newTodoValue contiene algún texto, e isDisabled es false. Dado que el método de JavaScript trim() elimina los espacios de un string situados al inicio y al final.
+
     return (
         <div className="modalBackground">
             <section className="modalContainer">
@@ -49,6 +52,8 @@ function TodoForm() {
                     onClick={() => {
                         onSumbit()
                     }}
+                    disabled={isDisabled}
+                    //Se deshabilita el botón si isDisabled es true
                     >Crear</button>
                 </div>
 
